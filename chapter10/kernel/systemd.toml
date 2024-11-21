@@ -1,0 +1,40 @@
+# This part should be sync with sysv.toml
+WERROR=' '
+PSI='*'
+PSI_DEFAULT_DISABLED=' '
+IKHEADERS=' '
+CGROUPS='*'
+MEMCG='*'
+EXPERT=' '
+RELOCATABLE='*'
+RANDOMIZE_BASE='*'
+STACKPROTECTOR='*'
+STACKPROTECTOR_STRONG='*'
+UEVENT_HELPER=' '
+DEVTMPFS='*'
+DEVTMPFS_MOUNT='*'
+DRM=' *M'
+NET='*'
+INET='*'
+IPV6='*'
+FW_LOADER=' *'
+FW_LOADER_USER_HELPER=' '
+DMIID='*'
+INOTIFY_USER='*'
+TMPFS='*'
+TMPFS_POSIX_ACL='*'
+CGROUP_SCHED='* '
+
+revision='systemd'
+
+[RT_GROUP_SCHED]
+value = ' '
+comment = 'This may cause some systemd features malfunction'
+
+[DRM_FBDEV_EMULATION]
+value = ' *'
+comment = 'If [DRM] is selected as * or M, this must be selected'
+
+[FRAMEBUFFER_CONSOLE]
+value = ' *'
+comment = 'If [DRM] is selected as * or M, this must be selected'

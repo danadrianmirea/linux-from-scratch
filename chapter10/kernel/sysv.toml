@@ -1,0 +1,25 @@
+WERROR=' '
+PSI='*'
+PSI_DEFAULT_DISABLED=' '
+IKHEADERS=' '
+CGROUPS='*'
+MEMCG='*'
+EXPERT=' '
+RELOCATABLE='*'
+RANDOMIZE_BASE='*'
+STACKPROTECTOR='*'
+STACKPROTECTOR_STRONG='*'
+UEVENT_HELPER=' '
+DEVTMPFS='*'
+DEVTMPFS_MOUNT='*'
+DRM=' *M'
+
+revision='sysv'
+
+[DRM_FBDEV_EMULATION]
+value = ' *'
+comment = 'If [DRM] is selected as * or M, this must be selected'
+
+[FRAMEBUFFER_CONSOLE]
+value = ' *'
+comment = 'If [DRM] is selected as * or M, this must be selected'
